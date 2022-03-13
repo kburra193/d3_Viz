@@ -1,0 +1,72 @@
+In this video I am going to show you how to push code from local to GitHub repository I will show you step by step
+step 1. 
+
+ download and install git bash into your local computer according to your operating system
+
+ you can download from official website
+
+https://git-scm.com/downloads
+
+ once you have installed git then Open Git Bash. 
+
+Now
+
+
+
+step 2. is generate ssh-key,  this is used for authentication
+
+------------------------------------------------------------
+
+the command is ssh-keygen -t rsa -b 4096 -C "tarique.rkl@gmail.com" and your GitHub email address,
+
+  This will Generate public/private rsa key pair.
+
+  "Enter a file in which to save the key," press Enter. This accepts the default file location.
+
+  Enter passphrase (empty for no passphrase): I will recommend enter here something and also remember that then enter again
+
+  Ensure the ssh-agent is running: --  eval $(ssh-agent -s)
+
+  Now Add your SSH private key to the ssh-agent. --for adding run command  $ ssh-add ~/.ssh/id_rsa
+
+  Now you have to add public SSH key to your GitHub account
+
+
+
+  so copy your public key by running this command clip "less then symbol" ~/.ssh/id_rsa.pub
+
+  Now go to your github account click on your profile icon then go to settings click on SSH and GPG key then click on new SSH-key
+
+  give a title any thing you like then paste your key here control v then click on "add ssh key" then it will ask for one time password
+
+  confirm password,  so we have added key successfully
+
+  Till now whatever I have done you have to do only once for your system
+
+
+
+step 3. Now create a new repository,
+
+-----------------------------------
+
+  choose repository name
+
+  Now you have to choose either public or private I am leaving it with default public option
+
+  Now if you want readme.md file then initialize it otherwise leave it then click on "create repository"
+
+  Now leave this screen as it is and go to your local directory where your code is, 
+
+  open git bash in the same directory
+
+  Now initialize git -- git init
+
+  then git add . --- it will add all the file into stash ignore warning
+
+  then git commit -m "first commit" now it will commit all the changes locally
+
+  now add the remote repository url-- git remote add origin git@github.com:Tariqu/test.git
+
+  now we are ready to push our code enter commad ---- git push origin master
+
+  now go to your repository and referesh now you can see all the files and folder here 
