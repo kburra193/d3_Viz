@@ -41,3 +41,6 @@ install the dependencies using the pacakge.json
 ## Credit
 
 This scatterplot is based on the (https://www.newline.co/courses/fullstack-d3-masterclass/making-a-scatterplot) by Amelia Wattenberger
+
+
+![alt text](https://github.com/kburra193/d3_Viz/blob/master/scatter_code/final%20picture.png)
