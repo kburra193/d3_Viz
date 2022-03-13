@@ -17,13 +17,13 @@ step 2. is generate ssh-key,  this is used for authentication
 
 ------------------------------------------------------------
 
-the command is ssh-keygen -t rsa -b 4096 -C "tarique.rkl@gmail.com" and your GitHub email address,
+the command is ssh-keygen -t rsa -b 4096 -C "kburra193@gmail.com" and your GitHub email address,
 
   This will Generate public/private rsa key pair.
 
   "Enter a file in which to save the key," press Enter. This accepts the default file location.
 
-  Enter passphrase (empty for no passphrase): I will recommend enter here something and also remember that then enter again
+  Enter passphrase (empty for no passphrase): I will recommend enter here something (bvk) and also remember that then enter again
 
   Ensure the ssh-agent is running: --  eval $(ssh-agent -s)
 
